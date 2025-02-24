@@ -1,0 +1,11 @@
+D1=ncread([MSWEP_idir,'197912','.nc'],'precipitation');
+D1=D1(:,:,30)';
+D2=ncread([MSWEP_idir,'197912','.nc'],'precipitation');
+D2=D2(:,:,31)';
+D3=ncread([MSWEP_idir,'198001','.nc'],'precipitation');
+D3=D3(:,:,1)';
+D4=ncread([MSWEP_idir,'198001','.nc'],'precipitation');
+D4=D4(:,:,2)';
+D5=ncread([MSWEP_idir,'198001','.nc'],'precipitation');
+D5=D5(:,:,3)';
+D1(202,705)+D2(202,705)+D3(202,705)+D4(202,705)+D5(202,705)
